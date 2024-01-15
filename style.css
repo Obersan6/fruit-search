@@ -1,0 +1,60 @@
+body {
+    box-sizing: border-box; 
+    margin: 0;
+    background: linear-gradient(to right, #27ae60, #f39c12);
+}
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    min-height: 70vh; 
+    width: 60%;
+    margin: 15vh auto 0; 
+    position: relative;
+    border-radius: 5%; 
+} 
+
+#search-bar {
+    height: 30px;
+    width: 200px; 
+    position: relative; 
+    text-align: center;
+    justify-content: center; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}  
+
+/* Style to position the suggestions container below the search bar */
+#suggestions-container {
+    position: absolute;
+    width: 100%;
+    top: 52%;  
+    left: 0; 
+    max-height: 150px; 
+    overflow-y: auto;  
+    border-top: none; 
+    justify-content: center;
+    text-align: center; 
+} 
+
+#suggestions-ul {
+    text-align: center;
+   
+}
+
+/* Style for individual suggestion items */
+#suggestions-ul li {
+    list-style: none;
+    padding: 8px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+} 
+
+.hovered-suggestion {
+    font-weight: bold;
+} 
+
+
+
